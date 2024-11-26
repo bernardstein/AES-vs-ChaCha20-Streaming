@@ -13,27 +13,36 @@ Raspberry Pi 4 Model B
 Raspberry Pi Camera Module v2
 Python 3.7+
 Required Python packages: picamera2, Cryptodome
+
 Installation
+
 Clone the repository:
+
 bash
-Copy code
+
 git clone https://github.com/yourusername/AES-vs-ChaCha20-Streaming.git
+
 Navigate to the repository folder and install dependencies:
+
 bash
-Copy code
+
 cd AES-vs-ChaCha20-Streaming
 pip install -r requirements.txt
+
 Usage
+
 To run the streaming application with AES encryption:
 
 bash
-Copy code
+
 python cryptostreamAES.py
+
 To run the streaming application with ChaCha20 encryption:
 
 bash
-Copy code
+
 python cryptostreamChaCha20.py
+
 Both scripts will initiate a video stream from the Raspberry Pi camera, encrypt the video frames using the specified algorithm, and serve the encrypted stream to a connected web client.
 
 Contributing
